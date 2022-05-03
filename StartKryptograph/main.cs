@@ -1,8 +1,8 @@
 ﻿using System;
 
-namespace MyTeam.IsBetter_true__Kryptograph_
+namespace StartKryptograph
 {
-    class Program
+    class main
     {
         static void Main(string[] args)
         {
