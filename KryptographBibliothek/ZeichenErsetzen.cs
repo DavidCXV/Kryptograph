@@ -4,5 +4,6 @@ namespace KryptographBibliothek
 {
     public class ZeichenErsetzen
     {
+
     }
 }
