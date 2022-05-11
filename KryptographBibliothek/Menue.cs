@@ -1,5 +1,5 @@
 ﻿using System;
-using Figgle
+using Figgle;
 
 namespace KryptographBibliothek
 {
@@ -20,23 +20,34 @@ namespace KryptographBibliothek
 
                 Console.WriteLine();
 
+                Console.ForegroundColor = ConsoleColor.Cyan;
+               
                 //ASCII art Logo wird erzeugt.
                 Console.WriteLine
-                    (FiggleFonts.Slant.Render("BFTMultiTool"));
+                    (FiggleFonts.Slant.Render("BFT - Kryptograph - Substitutions-Chiffre"));
+
+                Console.ResetColor();
+
+
+                Console.ForegroundColor = ConsoleColor.Cyan;
 
                 //Konsolentitel wird geändert.
-                Console.Title = "BFTMultiTool";
+                Console.Title = "BFT - Kryptograph - Substitutions-Chiffre";
+
+                Console.ForegroundColor = ConsoleColor.White;
 
                 Console.WriteLine("------------------------------------------------------------------------------------\n" +
-                                  "                              >>> Elektrotechnik Submenü <<<\n" +
+                                  "                              >>> Kryptograph Menue <<<\n" +
                                   "------------------------------------------------------------------------------------\n\n");
+
+                Console.ForegroundColor = ConsoleColor.Cyan;
 
                 Console.WriteLine("Eingabe: exit\t\t->\tbeendet das Programm");
                 Console.WriteLine("Eingabe: hauptmenü\t->\tzurück zum Hauptmenü");
 
                 //Beschreibung der Software.
-                Console.WriteLine("\n\nMit Hilfe dieses SubMenues, können sie ganz simpel häufig auftretende"
-                                    + " Problemstellungen im Elektrotechnik Unterricht lösen\n\n");
+                Console.WriteLine("\n\nDieses Modul bietet die Möglichkeit"
+                                    + "einen verschlüsselten Text, mit dem Substitutions-Chiffren Prinzip zu entschlüsseln. \n\n");
 
                 Hmenue = false;
 
@@ -104,6 +115,8 @@ namespace KryptographBibliothek
 
             if (Exit)
                 Environment.Exit(0);
+
+            Console.ResetColor();
 
         }
     
