@@ -1,5 +1,5 @@
 ﻿using System;
-using System.Globalization;
+
 
 namespace KryptographBibliothek
 {
@@ -16,35 +16,49 @@ namespace KryptographBibliothek
             Console.WriteLine("\n \n \n \n Welche Zeichen möchten sie entfernen?");
 
             string Zeichen = Convert.ToString(Console.ReadLine());
+            
 
-           
+
 
 
 
 
             string correctString = chiffre.Replace(Zeichen, "");
 
+            bool flag = true;
+
+            if(flag == true)
+            {
+                correctString = correctString.Replace(Zeichen.ToLower(), "");
+                correctString = correctString.Replace(Zeichen.ToUpper(), "");
+            }
+
+
             Console.WriteLine("Das ist der Text ohne das Zeichen das entfernt werden sollte \n \n \n \n {0}", correctString);
 
-            Console.WriteLine("Möchten sie noch weitere Zeichen entfernen?\n Falls sie dies wünschen geben sie die Zahl 1 ein und falls sie nicht fortfahren möchten geben sie eine 2 ein:");
+            Console.WriteLine("\n\nMöchten sie noch weitere Zeichen entfernen?\n\nFalls sie dies wünschen geben sie die Zahl 1 ein und falls sie nicht fortfahren möchten geben sie eine 2 ein:");
             int value = Convert.ToInt32(Console.ReadLine());
 
-            if (value == 1) ;
-            
+            if (value == 1)
+            {
+
+
+
+
                 Console.WriteLine("Welches Zeichen möchten sie nun entfernen?\n\n");
                 string Zeichen2 = Convert.ToString(Console.ReadLine());
                 string correctString2 = correctString.Replace(Zeichen2, "");
                 Console.WriteLine("Das ist der Text ohne das Zeichen das entfernt werden sollte\n\n{0}", correctString2);
+            }
+            else 
+            {
+                Console.WriteLine("Sie möchten also keinen Buchstaben mehr entfernen, nun können sie zum nächsten Schritt fortfahren.");
 
 
-            else
+                
+            }
 
-                Console.WriteLine("");
-            
-
-            
-
-
+             
         }
 
 
