@@ -43,7 +43,7 @@ namespace KryptographBibliothek
                 Console.ForegroundColor = ConsoleColor.Cyan;
 
                 Console.WriteLine("Eingabe: exit\t\t->\tbeendet das Programm");
-                Console.WriteLine("Eingabe: hauptmenü\t->\tzurück zum Hauptmenü");
+                
 
                 //Beschreibung der Software.
                 Console.WriteLine("\n\nDieses Modul bietet die Möglichkeit"
@@ -52,13 +52,8 @@ namespace KryptographBibliothek
                 Hmenue = false;
 
                 //Eingabeaufforderung 
-                Console.WriteLine("Wählen Sie eine der folgenden Themenbereiche:\n");
-                Console.WriteLine("\t1 - Widerstand/Leistungs Berechnung");
-                Console.WriteLine("\t2 - Strom Aufbau ");
-                Console.WriteLine("\t3 - Wiederstand/Leistungs Übersicht");
-                Console.WriteLine("\t4 - Elektronische Bauelemente");
-                Console.WriteLine("\t5 - Elektronische Bauelemente Version 2 \n");
-                Console.Write("Eingabe:");
+                
+                
                 HauptAusw = Console.ReadLine();
 
                 switch (HauptAusw)
@@ -73,26 +68,7 @@ namespace KryptographBibliothek
                         Console.Clear();
                          
                         break;
-
-                    case "3":
-                        Console.Clear();
-                        
-                        break;
-
-                    case "4":
-                        Console.Clear();
-                        
-                        break;
-
-                    case "5":
-                        Console.Clear();
-                        
-                        break;
-
-                    case "hauptmenü":
-                        Console.Clear();
-                        Hmenue = true;
-                        break;
+                                            
                     case "exit":
                         Exit = true;
                         break;
