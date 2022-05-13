@@ -9,55 +9,48 @@ namespace KryptographBibliothek
 
         public static void AuslesenTab()
         {
-            List<double> Wahrscheinlichkeiten = new List<double>();
-            Wahrscheinlichkeiten.Add(0.558);
-            Wahrscheinlichkeiten.Add(0.054);
-            Wahrscheinlichkeiten.Add(0.196);
-            Wahrscheinlichkeiten.Add(0.316);
-            Wahrscheinlichkeiten.Add(0.498);
-            Wahrscheinlichkeiten.Add(1.693);
-            Wahrscheinlichkeiten.Add(0.149);
-            Wahrscheinlichkeiten.Add(0.302);
-            Wahrscheinlichkeiten.Add(0.498);
-            Wahrscheinlichkeiten.Add(0.802);
-            Wahrscheinlichkeiten.Add(0.24);
-            Wahrscheinlichkeiten.Add(0.132);
-            Wahrscheinlichkeiten.Add(0.360);
-            Wahrscheinlichkeiten.Add(0.255);
-            Wahrscheinlichkeiten.Add(0.1053);
-            Wahrscheinlichkeiten.Add(0.224);
-            Wahrscheinlichkeiten.Add(0.030);
-            Wahrscheinlichkeiten.Add(0.067);
-            Wahrscheinlichkeiten.Add(0.002);
-            Wahrscheinlichkeiten.Add(0.689);
-            Wahrscheinlichkeiten.Add(0.037);
-            Wahrscheinlichkeiten.Add(0.642);
-            Wahrscheinlichkeiten.Add(0.579);
-            Wahrscheinlichkeiten.Add(0.383);
-            Wahrscheinlichkeiten.Add(0.065);
-            Wahrscheinlichkeiten.Add(0.084);
-            Wahrscheinlichkeiten.Add(0.178);
-            Wahrscheinlichkeiten.Add(0.005);
-            Wahrscheinlichkeiten.Add(0.005);
-            Wahrscheinlichkeiten.Add(0.121);
+            double[,] Wahrscheinlichkeiten = new double[,] { {0.558, 0.054, 0.196, 0.316, 0.498, 1.693, 0.149, 0.302, 0.498, 0.802, 0.24, 0.132, 0.360, 0.255, 0.1053, 0.224,
+            0.030, 0.067, 0.002, 0.689, 0.037, 0.642, 0.579, 0.383, 0.065, 0.084, 0.178, 0.005, 0.005, 0.121   }, };
 
-          
+            string[,] Wahrsch_Buchst = new string[,] { { "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z" } };
 
-            Console.WriteLine(Wahrscheinlichkeiten[0]);
 
-            //public static void rückgabe();
+
+
+            var alles = ("", 0);
+
+            bool überg = false;
+
+            switch (überg)
+            {
+                case false:
+             //       alles = Übergabe(Wahrscheinlichkeiten);
+                    break;
+
+
+                case true:
+             //     alles = Übergabe(Wahrsch_Buchst);
+                    break;
+
+
+
+
+
+
+
+
+
+            }
+
+            static void Übergabe(double[,]Wahrsch, string[,]Busta)
             {
 
             }
+
+
+
+
         }
-
-        
-        
-        
-
-
-    
-
-
+            
     }
 }
