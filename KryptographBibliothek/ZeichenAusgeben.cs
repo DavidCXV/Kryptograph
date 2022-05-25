@@ -1,5 +1,5 @@
 ﻿using System;
-using ;
+using Figgle;
 
 
 
@@ -10,22 +10,32 @@ namespace KryptographBibliothek
       public static void ZeichenAu() 
         {
 
+            Console.ForegroundColor = ConsoleColor.Cyan;
+
             (int, int) cPosBM = Console.GetCursorPosition();
 
             Console.WriteLine();
 
            
             Console.WriteLine
-                (Figglefonts.Slant.Render("Ausgabe der Chiffre"));
+                (FiggleFonts.Slant.Render("Ausgabe der Chiffre"));
 
            
             Console.Title = "Ausgabe der Chiffre";
+
+
+            Console.ForegroundColor = ConsoleColor.White;
+
+
+
 
             Console.WriteLine("------------------------------------------------------------------------------------\n" +
                               "                              >>> Ausgabe der Chiffre <<<\n" +
                               "------------------------------------------------------------------------------------\n\n");
 
-            Console.WriteLine("Ihr Ausgegebener Text lautet : Hallo ");
+            Console.ForegroundColor = ConsoleColor.Cyan;
+
+            Console.WriteLine("Ihr Ausgegebener Text lautet :  ");
                 Console.ReadKey();
             
 
