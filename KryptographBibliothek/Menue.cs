@@ -1,12 +1,13 @@
 ﻿using System;
 using Figgle;
+using System.IO;
 
 namespace KryptographBibliothek
 {
     public class Menue
     {
 
-        public static void MainMenue() 
+        public static void MainMenue()
         {
 
             string HauptAusw;
@@ -21,7 +22,7 @@ namespace KryptographBibliothek
                 Console.WriteLine();
 
                 Console.ForegroundColor = ConsoleColor.Cyan;
-               
+
                 //ASCII art Logo wird erzeugt.
                 Console.WriteLine
                     (FiggleFonts.Slant.Render("BFT - Kryptograph - Substitutions-Chiffre"));
@@ -43,7 +44,7 @@ namespace KryptographBibliothek
                 Console.ForegroundColor = ConsoleColor.Cyan;
 
                 Console.WriteLine("Eingabe: exit\t\t->\tbeendet das Programm");
-                
+
 
                 //Beschreibung der Software.
                 Console.WriteLine("\n\nDieses Modul bietet die Möglichkeit"
@@ -52,37 +53,31 @@ namespace KryptographBibliothek
                 Hmenue = false;
 
                 //Eingabeaufforderung 
-                
-                
+
+                Console.Write("Eingabe:");
                 HauptAusw = Console.ReadLine();
 
                 switch (HauptAusw)
                 {
 
-                    case "1":
-                        Console.Clear();
-                        
-                        break;
-
-                    case "2":
-                        Console.Clear();
-                         
-                        break;
-                                            
                     case "exit":
                         Exit = true;
                         break;
 
+                    case "1":
+
+                        break;
                     default:
 
-                        Console.WriteLine("Ungültige Eingabe");
-                        Console.ReadKey();
+
+
+
 
                         (int, int) cPosAM = Console.GetCursorPosition();
 
 
                         KonsolenExtrasBibliothek.ConsoleExtras.ClearCurrentConsoleLine(cPosBM.Item2, cPosAM.Item2);
-                        
+
                         break;
                 }
 
@@ -95,7 +90,39 @@ namespace KryptographBibliothek
             Console.ResetColor();
 
         }
-    
+
+
+        public static string Pfadabfrage()
+        {
+            string fullPath = " ";
+
+
+            do
+            {
+                Console.WriteLine("Warte auf Eingabe eines Dateipfads");
+                string curFile = Console.ReadLine();
+
+                string[] paths = { @"", curFile };
+                fullPath = Path.Combine(paths);
+
+
+                Console.WriteLine(File.Exists(fullPath) ? "File exists." : "File does not exist.");
+            } while (!File.Exists(fullPath));
+
+            return fullPath;
+
+
+
+
+        }
+        
+        public static void Substitution()
+        {
+
+            string pfad = Pfadabfrage();
+
+        }
     }
+}    
     
-}
+
