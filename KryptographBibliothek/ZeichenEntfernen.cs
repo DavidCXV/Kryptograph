@@ -41,14 +41,23 @@ namespace KryptographBibliothek
 
             if (value == 1)
             {
-
-
-
+               
 
                 Console.WriteLine("Welches Zeichen möchten sie nun entfernen?\n\n");
                 string Zeichen2 = Convert.ToString(Console.ReadLine());
                 string correctString2 = correctString.Replace(Zeichen2, "");
+
+                bool flag2 = true;
+
+                if (flag2 == true)
+                {
+                    correctString2 = correctString2.Replace(Zeichen.ToLower(), "");
+                    correctString2 = correctString2.Replace(Zeichen.ToUpper(), "");
+                }
                 Console.WriteLine("Das ist der Text ohne das Zeichen das entfernt werden sollte\n\n{0}", correctString2);
+
+
+
             }
             else 
             {
