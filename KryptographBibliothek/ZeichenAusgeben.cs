@@ -1,4 +1,6 @@
 ﻿using System;
+using ;
+
 
 
 namespace KryptographBibliothek
@@ -8,21 +10,28 @@ namespace KryptographBibliothek
       public static void ZeichenAu() 
         {
 
-            Console.WriteLine("Ihr Ausgegebner Text lautet : \r");
-            Console.WriteLine("____________________________\n");
+            (int, int) cPosBM = Console.GetCursorPosition();
+
+            Console.WriteLine();
+
+           
+            Console.WriteLine
+                (Figglefonts.Slant.Render("Ausgabe der Chiffre"));
+
+           
+            Console.Title = "Ausgabe der Chiffre";
+
+            Console.WriteLine("------------------------------------------------------------------------------------\n" +
+                              "                              >>> Ausgabe der Chiffre <<<\n" +
+                              "------------------------------------------------------------------------------------\n\n");
+
+            Console.WriteLine("Ihr Ausgegebener Text lautet : Hallo ");
+                Console.ReadKey();
+            
 
             
-            Console.WriteLine("Wählen sie Zwischen den Folgenden Optionen : ");
+
             
-
-            Console.WriteLine("Wählen sie eine möglichkeit aus");
-            Console.WriteLine("\t - test1 ");
-            Console.WriteLine("\t - test2 ");
-            Console.WriteLine("\t - test3");
-            Console.WriteLine("\t - test4 ");
-            Console.WriteLine("Wähle eine Option");
-
-            string auswahl;
 
 
 
