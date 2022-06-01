@@ -7,7 +7,8 @@ namespace StartKryptograph
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-            KryptographBibliothek.AuslesenDerTabelle.AuslesenTab();
+            string beispielpfad = @"C:\Users\david.w15\Source\Repos\MyTeam.IsBetter-true_Kryptograph\Deutsch_Wahrscheinlichkeiten.txt";
+            KryptographBibliothek.AuslesenDerTabelle.AuslesenTab(beispielpfad);
         }
     }
 }
