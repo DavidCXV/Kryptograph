@@ -25,8 +25,6 @@ namespace KryptographBibliothek
 
 
             Console.ForegroundColor = ConsoleColor.White; // Farbe auf weiß geändert
-
-
            
 
             Console.WriteLine("------------------------------------------------------------------------------------\n" +
