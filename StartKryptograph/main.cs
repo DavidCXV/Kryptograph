@@ -6,7 +6,8 @@ namespace StartKryptograph
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            string pfad = @"C:\Users\tamim.h2\Source\Repos\MyTeam.IsBetter-true_Kryptograph\Chiffre.txt";
+            KryptographBibliothek.AuslesenChiffre.ChiffreAuslesen(pfad);
         }
     }
 }
