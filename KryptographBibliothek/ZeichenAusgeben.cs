@@ -35,7 +35,7 @@ namespace KryptographBibliothek
 
             Console.ForegroundColor = ConsoleColor.Cyan; // Farbe auf Cyan-blau geändert
 
-            Console.WriteLine("Ihr Ausgegebener Text lautet : Test  ");   // Ausgabe des Fertigen Textes
+            Console.WriteLine("Ihr entschlüsselter Text lautet : Test  ");   // Ausgabe des Fertigen Textes
             Console.ReadKey();                                                                               // Wartet auf eingabe um das Programm zu beenden
                 
 
