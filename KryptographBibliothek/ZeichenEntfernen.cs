@@ -49,6 +49,7 @@ namespace KryptographBibliothek
 
                 if (flag2 == true) // Es werden große und kleine Zeichen entfernt, da diese gleichgestellt werden
                 {
+
                     correctString2 = correctString2.Replace(Zeichen.ToLower(), "");
                     correctString2 = correctString2.Replace(Zeichen.ToUpper(), "");
 
