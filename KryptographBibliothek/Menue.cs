@@ -88,7 +88,13 @@ namespace KryptographBibliothek
        
         public static void Substitution()
         {
+            Console.WriteLine("Geben sie den Pfad der Chiffre an ");
+            
             string pfad = Pfadabfrage();
+            string subChiffre = KryptographBibliothek.AuslesenChiffre.ChiffreAuslesen(pfad);
+            
+            Console.WriteLine("Geben sie den Pfad der Tabelle an");
+            
         }
         public static void Caesar()
         {
