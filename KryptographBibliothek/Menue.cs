@@ -9,8 +9,9 @@ namespace KryptographBibliothek
 
         public static void MainMenue()
         {
-            string HauptAusw; bool Exit = false;
-            bool Mreturn; do
+            string Ausw; bool Exit = false;
+            
+            do
             {
                 (int, int) cPosBM = Console.GetCursorPosition();
                 Console.WriteLine();
@@ -35,7 +36,8 @@ namespace KryptographBibliothek
                
                 //Beschreibung der Software.
                 Console.WriteLine("\n\nDieses Modul bietet die Möglichkeit"
-                + "einen verschlüsselten Text, mit einem Prinzip zu entschlüsseln. \n\n"); Mreturn = false; //Eingabeaufforderung
+                + "einen verschlüsselten Text, mit einem Prinzip zu entschlüsseln. \n\n"); 
+                //Eingabeaufforderung
                
                 Console.WriteLine("Mit welcher Chiffre wollen sie arbeiten: ");
                 Console.Write("1 - Substitutions-Chiffre\n");
@@ -43,7 +45,7 @@ namespace KryptographBibliothek
                 Console.Write("3 - Skytale-Chiffre\n");
                 Console.Write("Eingabe:");
                 
-                HauptAusw = Console.ReadLine(); switch (HauptAusw)
+                Ausw = Console.ReadLine(); switch (Ausw)
                 {
                     case "exit":
                         Exit = true;
@@ -65,7 +67,9 @@ namespace KryptographBibliothek
                         KonsolenExtrasBibliothek.ConsoleExtras.ClearCurrentConsoleLine(cPosBM.Item2, cPosAM.Item2);
                         break;
                 }
-            } while (!Exit); if (Exit)
+            } while (!Exit);
+            
+            if (Exit)
                 Environment.Exit(0); Console.ResetColor();
         }
         public static string Pfadabfrage()
