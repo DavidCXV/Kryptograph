@@ -40,7 +40,7 @@ namespace KryptographBibliothek
                 Console.WriteLine("Mit welcher Chiffre wollen sie arbeiten: ");
                 Console.Write("1 - Substitutions-Chiffre\n");
                 Console.Write("2 - Caesar-Chiffre\n");
-                Console.Write("3 - Skytale-Chifre\n");
+                Console.Write("3 - Skytale-Chiffre\n");
                 Console.Write("Eingabe:");
                 
                 HauptAusw = Console.ReadLine(); switch (HauptAusw)
@@ -49,12 +49,15 @@ namespace KryptographBibliothek
                         Exit = true;
                         break;
                     case "1":
+                        Console.Clear();
                         Substitution();
                         break;
                     case "2":
+                        Console.Clear();
                         Caesar();
                         break;
                     case "3":
+                        Console.Clear();
                         Skytale();
                         break;
                     default:
@@ -91,7 +94,7 @@ namespace KryptographBibliothek
         {
             Console.WriteLine("Dieses Entschlüsselungsprinzip ist noch in Arbeit");
         }
-               
+
     }
 }
 
