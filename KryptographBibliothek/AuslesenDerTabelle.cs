@@ -7,7 +7,7 @@ namespace KryptographBibliothek
     public class AuslesenDerTabelle
     {
 
-        public static void AuslesenTab(string pfad)
+        public static void auslesenTab(string pfad)
         {
 
             //1. Informationen als String auslesen über Pfad 

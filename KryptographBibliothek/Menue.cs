@@ -9,7 +9,7 @@ namespace KryptographBibliothek
 
         public static void MainMenue()
         {
-            string Ausw; bool Exit = false;
+            string mainSelection; bool exit = false;
             
             do
             {
@@ -45,10 +45,10 @@ namespace KryptographBibliothek
                 Console.Write("3 - Skytale-Chiffre\n");
                 Console.Write("Eingabe:");
                 
-                Ausw = Console.ReadLine(); switch (Ausw)
+                mainSelection = Console.ReadLine(); switch (mainSelection)
                 {
                     case "exit":
-                        Exit = true;
+                        exit = true;
                         break;
                     case "1":
                         Console.Clear();
@@ -67,9 +67,9 @@ namespace KryptographBibliothek
                         KonsolenExtrasBibliothek.ConsoleExtras.ClearCurrentConsoleLine(cPosBM.Item2, cPosAM.Item2);
                         break;
                 }
-            } while (!Exit);
+            } while (!exit);
             
-            if (Exit)
+            if (exit)
                 Environment.Exit(0); Console.ResetColor();
         }
         public static string Pfadabfrage()
@@ -90,9 +90,9 @@ namespace KryptographBibliothek
         {
             Console.WriteLine("Geben sie den Pfad der Chiffre an ");
             
-            string pfad = Pfadabfrage();
-            string subChiffre = KryptographBibliothek.AuslesenChiffre.ChiffreAuslesen(pfad);
-            
+            string path = Pfadabfrage();
+            string subChiffre = KryptographBibliothek.AuslesenChiffre.ChiffreAuslesen(path);
+           
             Console.WriteLine("Geben sie den Pfad der Tabelle an");
             
         }
