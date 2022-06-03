@@ -98,7 +98,7 @@ namespace KryptographBibliothek
         {
             Console.WriteLine("Dieses Entschlüsselungsprinzip ist noch in Arbeit");
         }
-
+        //KryptographBib.Zeichenzählen.Zeicehnzählen(chiffre);
     }
 }
 
