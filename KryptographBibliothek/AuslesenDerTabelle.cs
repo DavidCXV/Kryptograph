@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 
 
 namespace KryptographBibliothek
@@ -7,7 +8,7 @@ namespace KryptographBibliothek
     public class AuslesenDerTabelle
     {
 
-        public static void auslesenTab(string pfad)
+        public static void AuslesenTab(string pfad)
         {
 
             //1. Informationen als String auslesen über Pfad 
@@ -16,16 +17,16 @@ namespace KryptographBibliothek
 
             Console.ForegroundColor = ConsoleColor.Cyan;
 
-            string[] Wahrsch_Text = System.IO.File.ReadAllLines(pfad);
+            string[] wahrschText = File.ReadAllLines(pfad);
             var dictionary = new Dictionary<string, double>();
 
-            foreach (string rows in Wahrsch_Text)
+            foreach (string rows in wahrschText)
             {
-                string[] Reihen = rows.Split();
+                string[] reihen = rows.Split();
 
-                dictionary.Add((Reihen[0]), Convert.ToDouble(Reihen[1]));
+                dictionary.Add((reihen[0]), Convert.ToDouble(reihen[1]));
 
-                Console.WriteLine(Reihen[0] + ", " + Reihen[1]);
+                Console.WriteLine(reihen[0] + ", " + reihen[1]);
             }
 
             

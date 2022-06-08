@@ -18,17 +18,17 @@ namespace KryptographBibliothek
 
             Console.WriteLine("\n \n \n \n Welche Zeichen möchten sie entfernen?");   // Der Benutzer wird gefragt was er entfernen möchte
 
-            string Zeichen = Convert.ToString(Console.ReadLine()); // Der Nutzer gibt das zu entfernende Zeichen ein und es wird eingelesen
+            string zeichen = Convert.ToString(Console.ReadLine()); // Der Nutzer gibt das zu entfernende Zeichen ein und es wird eingelesen
             
-            string correctString = chiffre.Replace(Zeichen, "");  // Das Zeichen wird entfernt
+            string correctString = chiffre.Replace(zeichen, "");  // Das Zeichen wird entfernt
 
             bool flag = true;
 
             if(flag == true)   // Es werden große und kleine Zeichen entfernt, da diese gleichgestellt werden
             {
 
-                correctString = correctString.Replace(Zeichen.ToLower(), "");   
-                correctString = correctString.Replace(Zeichen.ToUpper(), "");
+                correctString = correctString.Replace(zeichen.ToLower(), "");   
+                correctString = correctString.Replace(zeichen.ToUpper(), "");
 
             }
 
@@ -50,8 +50,8 @@ namespace KryptographBibliothek
                 if (flag2 == true) // Es werden große und kleine Zeichen entfernt, da diese gleichgestellt werden
                 {
 
-                    correctString2 = correctString2.Replace(Zeichen.ToLower(), "");
-                    correctString2 = correctString2.Replace(Zeichen.ToUpper(), "");
+                    correctString2 = correctString2.Replace(zeichen.ToLower(), "");
+                    correctString2 = correctString2.Replace(zeichen.ToUpper(), "");
 
                 }
                

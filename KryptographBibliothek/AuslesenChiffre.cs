@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 
 namespace KryptographBibliothek
  
@@ -7,7 +8,7 @@ namespace KryptographBibliothek
     {
         public static string ChiffreAuslesen(string pfad)
         {                     
-            string chiffre = System.IO.File.ReadAllText(pfad);
+            string chiffre = File.ReadAllText(pfad);
             Console.WriteLine(chiffre);                              
             return chiffre;                      
         }

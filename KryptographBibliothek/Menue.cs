@@ -18,7 +18,7 @@ namespace KryptographBibliothek
                 
                 Console.ForegroundColor = ConsoleColor.Cyan; //ASCII art Logo wird erzeugt.
                
-                Console.WriteLine(FiggleFonts.Slant.Render("BFT - Kryptograph - Substitutions-Chiffre")); 
+                Console.WriteLine(FiggleFonts.Slant.Render("BFT - Kryptograph - Chiffre")); 
                 
                 Console.ResetColor();
                 
@@ -35,7 +35,7 @@ namespace KryptographBibliothek
                 Console.WriteLine("Eingabe: Mreturn\t\t->\tkehrt zum Auswahlmenue zurueck"); 
                
                 //Beschreibung der Software.
-                Console.WriteLine("\n\nDieses Modul bietet die Möglichkeit"
+                Console.WriteLine("\n\nDieses Modul bietet die Möglichkeit,"
                 + "einen verschlüsselten Text, mit einem Prinzip zu entschlüsseln. \n\n"); 
                 //Eingabeaufforderung
                
@@ -57,10 +57,12 @@ namespace KryptographBibliothek
                     case "2":
                         Console.Clear();
                         Caesar();
+                        Console.ReadKey();
                         break;
                     case "3":
                         Console.Clear();
                         Skytale();
+                        Console.ReadKey();
                         break;
                     default:
                         (int, int) cPosAM = Console.GetCursorPosition();
@@ -83,17 +85,21 @@ namespace KryptographBibliothek
                 fullPath = Path.Combine(paths);
                 Console.WriteLine(File.Exists(fullPath) ? "Datei existiert." : "Datei existiert nicht.");
                 Console.ReadKey();
-            } while (!File.Exists(fullPath)); return fullPath;
+            } while (!File.Exists(fullPath)); 
+            
+            return fullPath;
         }
        
         public static void Substitution()
         {
             Console.WriteLine("Geben sie den Pfad der Chiffre an ");
             
-            string path = Pfadabfrage();
-            string subChiffre = KryptographBibliothek.AuslesenChiffre.ChiffreAuslesen(path);
+            string pathChiffre = Pfadabfrage();
+            string subChiffre = KryptographBibliothek.AuslesenChiffre.ChiffreAuslesen(pathChiffre);
            
             Console.WriteLine("Geben sie den Pfad der Tabelle an");
+
+            string pathTabelle = Pfadabfrage();
             
         }
         public static void Caesar()
