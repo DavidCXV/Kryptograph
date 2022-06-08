@@ -22,11 +22,22 @@ namespace KryptographBibliothek
 
             foreach (string rows in wahrschText)
             {
-                string[] reihen = rows.Split();
+                try 
+                {
+                    string[] reihen = rows.Split();
 
-                dictionary.Add((reihen[0]), Convert.ToDouble(reihen[1]));
+                    dictionary.Add((reihen[0]), Convert.ToDouble(reihen[1]));
 
-                Console.WriteLine(reihen[0] + ", " + reihen[1]);
+                    Console.WriteLine(reihen[0] + ", " + reihen[1]);
+                }
+                catch(ArgumentException)
+                {
+                    string[] reihen = rows.Split();
+
+                    dictionary.Add((reihen[0]), Convert.ToDouble(reihen[1]));
+
+                    Console.WriteLine(reihen[0] + ", " + reihen[1]);
+                }
             }
 
             

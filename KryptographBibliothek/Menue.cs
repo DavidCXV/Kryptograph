@@ -80,8 +80,8 @@ namespace KryptographBibliothek
 
             do
             {
-                Console.WriteLine("Warte auf Eingabe eines Dateipfads");
-                string curFile = Console.ReadLine(); string[] paths = { @"", curFile };
+                string curFile = Console.ReadLine();
+                string[] paths = { @"", curFile };
                 fullPath = Path.Combine(paths);
                 Console.WriteLine(File.Exists(fullPath) ? "Datei existiert." : "Datei existiert nicht.");
                 Console.ReadKey();
@@ -93,13 +93,24 @@ namespace KryptographBibliothek
         public static void Substitution()
         {
             Console.WriteLine("Geben sie den Pfad der Chiffre an ");
-            
             string pathChiffre = Pfadabfrage();
-            string subChiffre = KryptographBibliothek.AuslesenChiffre.ChiffreAuslesen(pathChiffre);
+            Console.Clear();
            
-            Console.WriteLine("Geben sie den Pfad der Tabelle an");
+            Console.WriteLine("Die Chiffre sieht wie folgt aus:");
+            Console.WriteLine();
+            AuslesenChiffre.ChiffreAuslesen(pathChiffre);
+            Console.ReadKey();
+            Console.Clear();
 
-            string pathTabelle = Pfadabfrage();
+            Console.WriteLine("Geben sie den Pfad der Tabelle an");
+            string pathChart = Pfadabfrage();
+            Console.Clear();
+
+            Console.WriteLine("Der Inhalt der Tabelle lautet wie folgt:");
+            Console.WriteLine();
+            AuslesenDerTabelle.AuslesenTab(pathChart);
+            Console.ReadKey();
+
             
         }
         public static void Caesar()
