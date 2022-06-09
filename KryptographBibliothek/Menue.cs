@@ -94,6 +94,7 @@ namespace KryptographBibliothek
         {
             Console.WriteLine("Geben sie den Pfad der Chiffre an ");
             string pathChiffre = Pfadabfrage();
+            Console.ReadKey();
             Console.Clear();
            
             Console.WriteLine("Die Chiffre sieht wie folgt aus:");
@@ -104,6 +105,7 @@ namespace KryptographBibliothek
 
             Console.WriteLine("Geben sie den Pfad der Tabelle an");
             string pathChart = Pfadabfrage();
+            Console.ReadKey(); 
             Console.Clear();
 
             Console.WriteLine("Der Inhalt der Tabelle lautet wie folgt:");
