@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace KryptographBibliothek
 {
-    public class ZeichenZählen
+    public class ZeichenZaehlen
     {
         public static Dictionary<char,double> Zaehlen(string chiffre)
         {
