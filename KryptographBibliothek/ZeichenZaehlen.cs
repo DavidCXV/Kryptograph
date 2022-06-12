@@ -8,12 +8,13 @@ namespace KryptographBibliothek
         public static Dictionary<char,double> Zaehlen(string chiffre)
         {
             var result = new Dictionary<char, double>();
-
+            int notletter = 0;
             for (int i = 0; i < chiffre.Length; i++)
             {
                 char c = chiffre[i];
                 if (!Char.IsLetter(c))
                 {
+                    notletter++;
                     continue;
                 }
                 c = Char.ToUpper(c);
@@ -23,7 +24,7 @@ namespace KryptographBibliothek
             }
             foreach (var key in result.Keys)
             {
-                result[key] = result[key] / chiffre.Length;
+                result[key] = result[key] / (chiffre.Length-notletter);
             }
 
             return result;
