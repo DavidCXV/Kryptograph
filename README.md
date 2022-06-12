@@ -13,5 +13,10 @@
 |   		| |Entwickler|@NeoEkusoshisuto|ZeichenErsetzten|
 
 ## Über das Projekt
-...
+In dieser Projektarbeit widmen wir uns als Team der Problemstellung,
+einen verschlüsselten Text mit Hilfe des Prinzips der Substitutions-Chiffre
+zu entschlüsseln & diesen dann im Anschluss als Klartext darzustellen. 
+
+Dieses Tool wird in der Programmiersprache C# als Konsolenanwendung gebaut
+& im Vorhinein mit einem Pogrammablaufplan geplant.
 
