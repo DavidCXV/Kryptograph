@@ -6,7 +6,6 @@ namespace KryptographBibliothek
 {
     public class Menue
     {
-
         public static void MainMenue()
         {
             string mainSelection; bool exit = false;
