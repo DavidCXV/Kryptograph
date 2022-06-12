@@ -113,6 +113,8 @@ namespace KryptographBibliothek
             AuslesenDerTabelle.AuslesenTab(pathChart);
             Console.ReadKey();
 
+            //ZeichenEntfernen.Entfernen(Chiffre);
+
             
         }
         public static void Caesar()
