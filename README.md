@@ -5,7 +5,7 @@
 | Team    	| Methode 	|Rolle		|Username	|Branch		|
 | ----------- 	| ----------- 	|-----------		|-----------	|-----------	|
 |**MyTeam.IsBetter=true;**	|-|Projektkoordinator|@davobeats|AuslesenDerTabelle|
-|   		|  |Technische Kooordination|@DavidCXV|main|
+|   		|  |Technische Kooordination|@DavidCXV|main & main_copy|
 |   		| |Entwickler|@sergeyabi|ZeichenZählen|
 |   		| |Entwickler|@Dennis180|ZeichenAusgeben|
 |   		| |Entwickler|@MoritzM1110|ZeichenEntfernen|
