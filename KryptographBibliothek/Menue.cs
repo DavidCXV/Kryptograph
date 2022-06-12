@@ -115,6 +115,11 @@ namespace KryptographBibliothek
 
             //ZeichenEntfernen.Entfernen(Chiffre);
 
+            //ZeichenZählen.Zaehlen(Chiffre);
+
+            //ZeichenErsetzen.Zeichenersetzen(Chiffre);
+
+            //ZeichenAusgeben.ZeichenAu(Chiffre);
             
         }
         public static void Caesar()
