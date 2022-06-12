@@ -30,7 +30,7 @@ namespace KryptographBibliothek
             //Alle Buchstaben im Dictionary durchgehen
             foreach (var key in result.Keys)
             {
-                //Prozentuale Anzahl ausrechen
+                //Prozentuale Anzahl ausrechnen
                 result[key] = result[key] / (chiffre.Length-notletter);
             }
             //Ergebnis zurückgeben
