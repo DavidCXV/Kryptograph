@@ -19,4 +19,6 @@ zu entschlüsseln & diesen dann im Anschluss als Klartext darzustellen.
 
 Dieses Tool wird in der Programmiersprache C# als Konsolenanwendung gebaut
 & im Vorhinein mit einem Pogrammablaufplan geplant.
+Jedes Teammitglied hat eine einzigartige Aufgabe, die einen Baustein des
+Gesamtprojekts bildet.
 
